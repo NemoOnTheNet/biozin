@@ -1,10 +1,6 @@
 body {
-  background: linear-gradient(
-    180deg,
-    rgba(240, 244, 236, 1),
-    rgba(241, 235, 226, 1) 100%
-  );
-  font-family: "Harmonia Sans", sans-serif;
+  background: linear-gradient(180deg, rgba(240, 244, 236, 1), rgba(241, 235, 226, 1) 100%);
+  font-family: 'Harmonia Sans', sans-serif;
   overflow-wrap: normal;
   margin: 0;
 }
@@ -31,6 +27,15 @@ main {
   align-items: center;
 }
 
+ul {
+  list-style: none;
+  padding: unset;
+}
+
+.start_li {
+  font-weight: bold;
+}
+
 #first_section {
   display: flex;
   justify-content: center;
@@ -50,6 +55,8 @@ main {
   font-size: 4vw;
   color: #fff;
   word-break: break-word;
+  line-height: unset;
+  box-sizing: unset;
   z-index: 1;
 }
 
@@ -71,7 +78,7 @@ main {
 
 #seconde_section {
   text-align: center;
-  width: 90%;
+  width: 60%;
 }
 
 #seconde_section h2 {
@@ -104,11 +111,18 @@ main {
   color: rgba(46, 42, 57, 0.8);
 }
 
+#third_section {
+  text-align: start;
+  width: 60%;
+  line-height: 30px;
+}
+
 footer {
   height: 70px;
   background-color: rgb(243, 225, 189);
   display: flex;
   align-self: flex-end;
+  margin: 0;
 }
 
 footer p {
