@@ -2,32 +2,247 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/style.css" />
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
-    <title>BioZin²</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="BioZin² - 35 ans de savoir-faire suisse en matière de santé et bien-être. Découvrez notre philosophie de la santé positive et notre complément alimentaire unique."
+    />
+    <meta
+      name="keywords"
+      content="BioZin, complément alimentaire, santé positive, bien-être, Suisse, médecins"
+    />
+    <link
+      rel="stylesheet"
+      href="/styles/style.css"
+    />
+    <link
+      rel="preload"
+      href="/images/biozin2-logo.png"
+      as="image"
+    />
+    <link
+      rel="icon"
+      href="/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Qui sommes-nous ? | BioZin² - 35 ans d'expertise en santé</title>
   </head>
   <body>
-    <header>
-      <h1>
+    <a
+      href="#main-content"
+      class="skip-link"
+      >Aller au contenu principal</a
+    >
+    <header role="banner">
+      <div class="logo-container">
         <img
           src="/images/biozin2-logo.png"
           alt="Logo BioZin²"
           title="BioZin²"
+          width="200"
+          height="100"
+          loading="eager"
         />
-      </h1>
-      <nav>
-        <a href="/index.html">BioZin²</a>
-        <a href="/product.html">Les principes actifs</a>
-        <a href="/about-us.html">Qui sommes-nous ?</a>
+      </div>
+      <nav
+        role="navigation"
+        aria-label="Navigation principale"
+      >
+        <ul>
+          <li>
+            <a
+              href="/index.html"
+              aria-label="Accueil BioZin²"
+              >BioZin²</a
+            >
+          </li>
+          <li><a href="/product.html">Les principes actifs</a></li>
+          <li>
+            <a
+              href="/about-us.html"
+              aria-current="page"
+              >Qui sommes-nous ?</a
+            >
+          </li>
+        </ul>
       </nav>
     </header>
-    <main></main>
-    <footer>
-      <p>
-        © 2025, <a href="/index.html">BioZin²</a>, tous droits réservé à Biozin
-        and Umbrella Corporation
-      </p>
+    <main
+      id="main-content"
+      role="main"
+    >
+      <article>
+        <header>
+          <h1>Qui sommes-nous ?</h1>
+          <h2>35 ans de savoir faire, à votre service</h2>
+        </header>
+
+        <section aria-labelledby="histoire">
+          <h3 id="histoire">Notre histoire</h3>
+          <p><strong>BioZin</strong> est une entreprise 🇨🇭 Suisse, fondée en 1989 par trois médecins, passionnés par la santé et le bien-être.</p>
+          <p>
+            Dans notre clinique privée, véritable havre de paix au bord du lac Léman, nous recevons toute l'année des patients soucieux de prendre soin d'eux et
+            de se ressourcer.
+          </p>
+          <figure>
+            <img
+              class="main-image"
+              src="./images/biobatiment-V2_480x480.jpg"
+              alt="Bâtiment moderne de la clinique BioZin au bord du lac Léman avec architecture contemporaine"
+              width="480"
+              height="480"
+              loading="lazy"
+            />
+            <figcaption>Notre clinique au bord du lac Léman</figcaption>
+          </figure>
+        </section>
+
+        <section aria-labelledby="philosophie">
+          <h3 id="philosophie">La santé positive pour chacune et chacun</h3>
+          <p>
+            Notre philosophie : offrir à nos patients une <strong>santé positive</strong>. Nous refusons une approche de la santé qui se résume trop souvent à
+            "ne pas être malade", car nous sommes convaincus qu'il faut "être en un peu meilleure santé chaque jour".
+          </p>
+        </section>
+
+        <section aria-labelledby="produit">
+          <h3 id="produit">Un complément alimentaire unique et pour tous</h3>
+          <p>
+            Ayant toujours à cœur de diffuser, au plus grand nombre, notre savoir-faire nous avons créé en 2023 BioZin², la deuxième version de notre complément
+            alimentaire phare.
+          </p>
+          <figure>
+            <img
+              class="main-image"
+              src="./images/BIOZIN-V2-GOOD_480x480.jpg"
+              alt="Flacon de complément alimentaire BioZin² avec emballage élégant"
+              width="480"
+              height="480"
+              loading="lazy"
+            />
+            <figcaption>BioZin² - Notre complément alimentaire unique</figcaption>
+          </figure>
+          <p>
+            Pour ceux qui n'ont pas le temps ou pas encore les moyens de participer à nos cures et week-ends de santé... il y a maintenant
+            <strong>BioZin²</strong>.
+          </p>
+          <p>Tout notre savoir-faire dans un joli flacon, avec une formulation unique, qui apporte des bienfaits jamais obtenus jusqu'ici.</p>
+        </section>
+
+        <section aria-labelledby="distribution">
+          <h3 id="distribution">Distribution en France</h3>
+          <div class="distributor-info">
+            <p>En France, <strong>BioZin²</strong> est distribué par :</p>
+            <address>
+              <strong>Aube Noire</strong><br />
+              17b Avenue du Général de La Coquillette<br />
+              60550 Saint Roustant
+            </address>
+          </div>
+        </section>
+
+        <section aria-labelledby="contact">
+          <h3 id="contact">Nous contacter</h3>
+          <form
+            action="/submit"
+            method="post"
+            novalidate
+          >
+            <fieldset>
+              <legend class="visually-hidden">Formulaire de contact</legend>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nom">Nom <span aria-label="requis">*</span></label>
+                  <input
+                    type="text"
+                    id="nom"
+                    name="nom"
+                    placeholder="Votre nom"
+                    required
+                    aria-describedby="nom-error"
+                  />
+                  <div
+                    id="nom-error"
+                    class="error-message"
+                    role="alert"
+                    aria-live="polite"
+                  ></div>
+                </div>
+                <div class="form-group">
+                  <label for="email">E-mail <span aria-label="requis">*</span></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="votre.email@exemple.com"
+                    required
+                    aria-describedby="email-error"
+                  />
+                  <div
+                    id="email-error"
+                    class="error-message"
+                    role="alert"
+                    aria-live="polite"
+                  ></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="telephone">Numéro de téléphone</label>
+                <input
+                  type="tel"
+                  id="telephone"
+                  name="telephone"
+                  placeholder="01 23 45 67 89"
+                  aria-describedby="telephone-hint"
+                />
+                <div
+                  id="telephone-hint"
+                  class="form-hint"
+                >
+                  Format : 01 23 45 67 89
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="commentaire">Commentaire <span aria-label="requis">*</span></label>
+                <textarea
+                  name="commentaire"
+                  id="commentaire"
+                  placeholder="Votre message..."
+                  required
+                  rows="5"
+                  aria-describedby="commentaire-error commentaire-count"
+                ></textarea>
+                <div
+                  id="commentaire-count"
+                  class="character-count"
+                  aria-live="polite"
+                >
+                  0/500 caractères
+                </div>
+                <div
+                  id="commentaire-error"
+                  class="error-message"
+                  role="alert"
+                  aria-live="polite"
+                ></div>
+              </div>
+              <button
+                type="submit"
+                class="submit-btn"
+              >
+                Envoyer le message
+              </button>
+            </fieldset>
+          </form>
+        </section>
+      </article>
+    </main>
+    <footer role="contentinfo">
+      <p>© 2025, <a href="/index.html">BioZin²</a>, tous droits réservés à Biozin and Umbrella Corporation</p>
     </footer>
+    <script src="/script-about.js"></script>
   </body>
 </html>

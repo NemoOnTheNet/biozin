@@ -6,147 +6,365 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <meta
+      name="description"
+      content="Découvrez les principes actifs de BioZin² : Chlorure de sodium, Soman, Lion's Mane, Aloès Vera et Fraise bio. Ingrédients 100% naturels et français pour votre bien-être."
+    />
+    <meta
+      name="keywords"
+      content="BioZin, principes actifs, chlorure sodium, soman, lion's mane, aloès vera, fraise bio, ingrédients naturels"
+    />
     <link
       rel="stylesheet"
       href="/styles/style.css"
+    />
+    <link
+      rel="preload"
+      href="/images/biozin2-logo.png"
+      as="image"
     />
     <link
       rel="icon"
       href="/images/favicon.ico"
       type="image/x-icon"
     />
-    <title>BioZin²</title>
+    <title>Les principes actifs | BioZin² - Ingrédients 100% naturels</title>
   </head>
   <body>
-    <header>
-      <h1>
+    <a
+      href="#main-content"
+      class="skip-link"
+      >Aller au contenu principal</a
+    >
+    <header role="banner">
+      <div class="logo-container">
         <img
           src="/images/biozin2-logo.png"
           alt="Logo BioZin²"
           title="BioZin²"
+          width="200"
+          height="100"
+          loading="eager"
         />
-      </h1>
-      <nav>
-        <a href="/index.html">BioZin²</a>
-        <a href="/product.html">Les principes actifs</a>
-        <a href="/about-us.html">Qui sommes-nous ?</a>
+      </div>
+      <nav
+        role="navigation"
+        aria-label="Navigation principale"
+      >
+        <ul>
+          <li>
+            <a
+              href="/index.html"
+              aria-label="Accueil BioZin²"
+              >BioZin²</a
+            >
+          </li>
+          <li>
+            <a
+              href="/product.html"
+              aria-current="page"
+              >Les principes actifs</a
+            >
+          </li>
+          <li><a href="/about-us.html">Qui sommes-nous ?</a></li>
+        </ul>
       </nav>
     </header>
-    <main>
-      <h1 class="actifs">Les principes actifs de BioZin²</h1>
-      <section class="product">
-        <article class="normal">
-          <div class="discover_product">
-            <h2>Le Chlorure de sodium</h2>
-            <p>
-              Le chlorure de Sodium agit en faveur de <b>l'équilibre général de votre corps</b>. Il <b>augmente votre focus</b> et rends votre sommeil plus
-              réparateur.
-            </p>
-            <p>
-              Extrait en Loire-Atlantique, par un procédé mécanique secret et 100% écologique, le Chlorure de Sodium de BioZin² est de la meilleure qualité qui
-              soit.
-            </p>
-            <p>---</p>
-            <p>Dosage : 4g / flacon</p>
-            <p>Origin : 🇫🇷 France</p>
-          </div>
-          <img
-            src="/images/salt-1475007_1280.jpg"
-            alt="Chlorure de sodium"
-            title="Chlorure de sodium"
-          />
-        </article>
-        <article class="reverse">
-          <img
-            src="/images/taro-root-2825925_1280.jpg"
-            alt="Soman"
-            title="Soman"
-          />
+    <main
+      id="main-content"
+      role="main"
+    >
+      <section
+        id="third_section"
+        aria-labelledby="intro-title"
+      >
+        <header>
+          <h1 id="intro-title">BioZin² - Complément alimentaire d'exception</h1>
+        </header>
+        <div class="intro-content">
+          <p><strong>BioZin²</strong> est un complément alimentaire conçu en Suisse 🇨🇭 et fabriqué en France 🇫🇷.</p>
+          <p><strong>BioZin²</strong> garantit 4 bienfaits, essentiels pour votre santé :</p>
+        </div>
+      </section>
+      <section aria-labelledby="bienfaits-title">
+        <h2
+          id="bienfaits-title"
+          class="visually-hidden"
+        >
+          Les 4 bienfaits de BioZin²
+        </h2>
+        <ul
+          class="benefits-list"
+          role="list"
+        >
+          <li role="listitem">
+            <div class="benefit-item">
+              <span
+                class="start_li"
+                aria-label="Énergie"
+                >⚡️ Plus d'Énergie</span
+              >
+              <p>
+                Depuis combien de temps ne vous êtes-vous pas réveillé avec la sensation d'avoir passé la meilleure nuit de votre vie ? Retrouvez le plaisir
+                d'un sommeil parfaitement réparateur.
+              </p>
+            </div>
+          </li>
+          <li role="listitem">
+            <div class="benefit-item">
+              <span
+                class="start_li"
+                aria-label="Focus"
+                >💡 Un Meilleur Focus</span
+              >
+              <p>
+                Dites adieu au "brouillard mental" qui vous empêche d'être concentré sur ce que vous avez à faire. Découvrez une nouvelle définition du mot
+                "productivité".
+              </p>
+            </div>
+          </li>
+          <li role="listitem">
+            <div class="benefit-item">
+              <span
+                class="start_li"
+                aria-label="Performance sportive"
+                >👟 Des Performances Sportives Optimisées</span
+              >
+              <p>Atteignez de nouveaux sommets dans vos activités sportives ! Plus d'endurance, plus de force et une récupération plus efficace.</p>
+            </div>
+          </li>
+          <li role="listitem">
+            <div class="benefit-item">
+              <span
+                class="start_li"
+                aria-label="Beauté"
+                >🧖‍♂️ Des cheveux et des ongles plus forts, une peau plus belle</span
+              >
+              <p>
+                Vous êtes en bonne santé et ça se voit. Notre formulation unique participe à renforcer le trio cheveux / ongles / peau, les premiers indicateurs
+                visibles de bien-être.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-          <div class="discover_product">
-            <h2>Le Soman</h2>
-            <p>
-              Très utilisé pendant l'antiquité par les athlètes romains, le soman est une merveille offerte par la nature. Excellent pour la santé
-              cardiovasculaire, il agit également sur le renforcement musculaire et sur la qualité de la récupération après l'effort.
-            </p>
-            <p>
-              Il est rare de le trouver dans les compléments alimentaire grand public, car sa culture et sa récolte demandent un vrai savoir-faire. Le soman de
-              BioZin² vient d'une ferme bio du Lot-et-Garonne.
-            </p>
-            <p>C'est notre ingrédient chouchou, vous verrez la différence dès la première prise.</p>
-            <p>---</p>
-            <p>Dosage : 5g / flacon</p>
-            <p>Origin : 🇫🇷 France</p>
-          </div>
-        </article>
-        <article class="normal">
-          <div class="discover_product">
-            <h2>Le Lion's Mane</h2>
-            <p>
-              Utilisé par les Biohackers américains depuis plusieurs années, ce champignon est bien connu pour ses vertus sur la régénération des neurones. Il agit également contre la fatigue et est un anti-âge naturel.
-            </p>
-            <p>
-              Cultivé dans des conditions optimales, le Lion's Mane de BioZin² est un extrait de haute qualité, garantissant tous ses bienfaits.
-            </p>
-             Notre Lion's Mane est récolté à la main, en forêt, dans les Pyrenées.
-            </p>
-            <p>---</p>
-            <p>Dosage : 15g / flacon</p>
-            <p>Origin : 🇫🇷 France</p>
-          </div>
-          <img
-            src="/images/media.jpg"
-            alt="Chlorure de sodium"
-            title="Chlorure de sodium"
-          />
-        </article>
-        <article class="reverse">
-          <img
-            src="/images/aloe-vera.jpg"
-            alt="Aloe Vera"
-            title="Aloe Vera"
-          />
+      <hr
+        role="separator"
+        aria-label="Séparateur de contenu"
+      />
 
-          <div class="discover_product">
-            <h2>Aloès Vera</h2>
-            <p>
-             Reconnue pour son incroyable pouvoir hydratant pour la peau, cette plante originaire d'Egypte contient les vitamines A, B, C & E ainsi qu'un pouvoir antioxydant. Ses vertus sont décuplés, grâce à la combinaison avec les autres ingrédients de la formule.
-            </p>
-            <p>
-              L'aloe Vera 100% bio de BioZin² est cultivée en région parisienne à Athis-Mons.
+      <section aria-labelledby="format-title">
+        <h2 id="format-title">Un format pensé pour vous</h2>
+        <p><strong>BioZin²</strong> c'est aussi un format pensé pour vous, les actifs trop occupés pour prendre 30 gélules tous les matins :</p>
+        <ul
+          class="format-list"
+          role="list"
+        >
+          <li role="listitem">
+            <div class="format-item">
+              <span
+                class="start_li"
+                aria-label="Une prise par mois"
+                >📅 Une Prise par Mois</span
+              >
+              <p>Simplicité et efficacité pour une action continue tout au long du mois.</p>
+            </div>
+          </li>
+          <li role="listitem">
+            <div class="format-item">
+              <span
+                class="start_li"
+                aria-label="Système d'abonnement"
+                >📦 Système d'Abonnement Facile</span
+              >
+              <p>Recevez votre flacon de BioZin² directement dans votre boîte aux lettres chaque mois, sans effort de votre part.</p>
+            </div>
+          </li>
+          <li role="listitem">
+            <div class="format-item">
+              <span
+                class="start_li"
+                aria-label="Composition naturelle"
+                >🥬 Composition 100% Naturelle et Locale</span
+              >
+              <p>Bénéficiez d'ingrédients naturels de qualité, soigneusement sélectionnés et produits en France.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
 
+      <section aria-labelledby="actifs-title">
+        <h2
+          id="actifs-title"
+          class="actifs"
+        >
+          Les principes actifs de BioZin²
+        </h2>
+        <div class="product">
+          <article
+            class="normal"
+            aria-labelledby="sodium-title"
+          >
+            <div class="discover_product">
+              <h3 id="sodium-title">Le Chlorure de sodium</h3>
+              <p>
+                Le chlorure de Sodium agit en faveur de <strong>l'équilibre général de votre corps</strong>. Il <strong>augmente votre focus</strong> et rend
+                votre sommeil plus réparateur.
+              </p>
+              <p>
+                Extrait en Loire-Atlantique, par un procédé mécanique secret et 100% écologique, le Chlorure de Sodium de BioZin² est de la meilleure qualité
+                qui soit.
+              </p>
+              <div class="ingredient-details">
+                <p><strong>Dosage :</strong> 4g / flacon</p>
+                <p><strong>Origine :</strong> 🇫🇷 France</p>
+              </div>
+            </div>
+            <figure>
+              <img
+                class="main-image"
+                src="/images/salt-1475007_1280.jpg"
+                alt="Cristaux de chlorure de sodium pure extraits en Loire-Atlantique"
+                title="Chlorure de sodium"
+                width="400"
+                height="400"
+                loading="lazy"
+              />
+              <figcaption class="visually-hidden">Chlorure de sodium de qualité pharmaceutique</figcaption>
+            </figure>
+          </article>
 
-            </p>
-            <p>---</p>
-            <p>Dosage : 30g / flacon</p>
-            <p>Origin : 🇫🇷 France</p>
-          </div>
-        </article>
-                <article class="normal">
-          <div class="discover_product">
-            <h2>La Fraise bio</h2>
-            <p>
-              L'ingrédient gourmand de BioZin² !
-            </p>
-            <p>
-              Nos fraises sont cultivée en Aquitaine, ou elle sont récoltés en pleine saison, puis séchés et broyées pour devenir un délicieux sirop.
-            </p>
-            <p>En plus de donner son goût unique et dé naturel a BioZin², la fraise agit dans la sécrétion de l'endorphines, l'hormone du bonheur !</p>
-            <p>---</p>
-            <p>Dosage : 40g / flacon</p>
-            <p>Origin : 🇫🇷 France</p>
-          </div>
+          <article
+            class="reverse"
+            aria-labelledby="soman-title"
+          >
+            <figure>
+              <img
+                class="main-image"
+                src="/images/taro-root-2825925_1280.jpg"
+                alt="Racines de Soman cultivées biologiquement dans le Lot-et-Garonne"
+                title="Soman"
+                width="400"
+                height="400"
+                loading="lazy"
+              />
+              <figcaption class="visually-hidden">Soman biologique du Lot-et-Garonne</figcaption>
+            </figure>
+            <div class="discover_product">
+              <h3 id="soman-title">Le Soman</h3>
+              <p>
+                Très utilisé pendant l'antiquité par les athlètes romains, le soman est une merveille offerte par la nature. Excellent pour la santé
+                cardiovasculaire, il agit également sur le renforcement musculaire et sur la qualité de la récupération après l'effort.
+              </p>
+              <p>
+                Il est rare de le trouver dans les compléments alimentaires grand public, car sa culture et sa récolte demandent un vrai savoir-faire. Le soman
+                de BioZin² vient d'une ferme bio du Lot-et-Garonne.
+              </p>
+              <p>C'est notre ingrédient chouchou, vous verrez la différence dès la première prise.</p>
+              <div class="ingredient-details">
+                <p><strong>Dosage :</strong> 5g / flacon</p>
+                <p><strong>Origine :</strong> 🇫🇷 France</p>
+              </div>
+            </div>
+          </article>
 
-          <img
-            src="/images/strawberry-1330459_1280.jpg"
-            alt="Fraise bio"
-            title="Fraise bio"
-          />
-        </article>
+          <article
+            class="normal"
+            aria-labelledby="lions-mane-title"
+          >
+            <div class="discover_product">
+              <h3 id="lions-mane-title">Le Lion's Mane</h3>
+              <p>
+                Utilisé par les Biohackers américains depuis plusieurs années, ce champignon est bien connu pour ses vertus sur la régénération des neurones. Il
+                agit également contre la fatigue et est un anti-âge naturel.
+              </p>
+              <p>
+                Cultivé dans des conditions optimales, le Lion's Mane de BioZin² est un extrait de haute qualité, garantissant tous ses bienfaits. Notre Lion's
+                Mane est récolté à la main, en forêt, dans les Pyrénées.
+              </p>
+              <div class="ingredient-details">
+                <p><strong>Dosage :</strong> 15g / flacon</p>
+                <p><strong>Origine :</strong> 🇫🇷 France</p>
+              </div>
+            </div>
+            <figure>
+              <img
+                class="main-image"
+                src="/images/media.jpg"
+                alt="Champignon Lion's Mane récolté à la main dans les Pyrénées"
+                title="Lion's Mane"
+                width="400"
+                height="400"
+                loading="lazy"
+              />
+              <figcaption class="visually-hidden">Champignon Lion's Mane des Pyrénées</figcaption>
+            </figure>
+          </article>
+
+          <article
+            class="reverse"
+            aria-labelledby="aloe-title"
+          >
+            <figure>
+              <img
+                class="main-image"
+                src="/images/aloe-vera.jpg"
+                alt="Plantes d'Aloès Vera cultivées biologiquement en région parisienne"
+                title="Aloe Vera"
+                width="400"
+                height="400"
+                loading="lazy"
+              />
+              <figcaption class="visually-hidden">Aloès Vera bio d'Athis-Mons</figcaption>
+            </figure>
+            <div class="discover_product">
+              <h3 id="aloe-title">Aloès Vera</h3>
+              <p>
+                Reconnue pour son incroyable pouvoir hydratant pour la peau, cette plante originaire d'Égypte contient les vitamines A, B, C & E ainsi qu'un
+                pouvoir antioxydant. Ses vertus sont décuplées, grâce à la combinaison avec les autres ingrédients de la formule.
+              </p>
+              <p>L'Aloès Vera 100% bio de BioZin² est cultivée en région parisienne à Athis-Mons.</p>
+              <div class="ingredient-details">
+                <p><strong>Dosage :</strong> 30g / flacon</p>
+                <p><strong>Origine :</strong> 🇫🇷 France</p>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="normal"
+            aria-labelledby="fraise-title"
+          >
+            <div class="discover_product">
+              <h3 id="fraise-title">La Fraise bio</h3>
+              <p>L'ingrédient gourmand de BioZin² !</p>
+              <p>Nos fraises sont cultivées en Aquitaine, où elles sont récoltées en pleine saison, puis séchées et broyées pour devenir un délicieux sirop.</p>
+              <p>En plus de donner son goût unique et naturel à BioZin², la fraise agit dans la sécrétion des endorphines, l'hormone du bonheur !</p>
+              <div class="ingredient-details">
+                <p><strong>Dosage :</strong> 40g / flacon</p>
+                <p><strong>Origine :</strong> 🇫🇷 France</p>
+              </div>
+            </div>
+            <figure>
+              <img
+                class="main-image"
+                src="/images/strawberry-1330459_1280.jpg"
+                alt="Fraises biologiques fraîches cultivées en Aquitaine"
+                title="Fraise bio"
+                width="400"
+                height="400"
+                loading="lazy"
+              />
+              <figcaption class="visually-hidden">Fraises bio d'Aquitaine</figcaption>
+            </figure>
+          </article>
+        </div>
       </section>
     </main>
-    <footer>
-      <p>© 2025, <a href="/index.html">BioZin²</a>, tous droits réservé à Biozin and Umbrella Corporation</p>
+    <footer role="contentinfo">
+      <p>© 2025, <a href="/index.html">BioZin²</a>, tous droits réservés à Biozin and Umbrella Corporation</p>
     </footer>
+    <script src="/script.js"></script>
   </body>
 </html>
