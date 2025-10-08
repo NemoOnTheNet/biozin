@@ -20,7 +20,7 @@ header a:hover {
 }
 
 main {
-  width: 60%;
+  width: 850px;
   margin: 25px auto;
   display: flex;
   flex-direction: column;
@@ -43,25 +43,8 @@ ul {
   width: 100%;
 }
 
-#first_section h2 {
-  display: block;
-  width: 20%;
-  height: 50%;
-  background-color: #2e2a39;
-  padding: 60px 70px 70px 70px;
-  margin-right: -3rem;
-  border-radius: 24px;
-  text-align: left;
-  font-size: 4vw;
-  color: #fff;
-  word-break: break-word;
-  line-height: unset;
-  box-sizing: unset;
-  z-index: 1;
-}
-
 #first_section img {
-  width: 50vw;
+  width: 40vw;
   min-width: 420px;
   border-radius: 24px;
 }
@@ -83,6 +66,9 @@ ul {
 
 #seconde_section h2 {
   font-size: 52px;
+}
+#savoir-faire-title {
+  text-align: center;
 }
 
 #seconde_section p {
@@ -144,7 +130,7 @@ article {
 }
 
 .product {
-  width: 60%;
+  width: 850px;
   line-height: 30px;
 }
 
@@ -345,6 +331,12 @@ header nav a[aria-current='page'] {
 .hero-content {
   text-align: center;
   max-width: 600px;
+  background: lightyellow;
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: -50%;
+  max-width: 400px;
+  position: absolute;
 }
 
 .hero-subtitle {
@@ -383,6 +375,7 @@ header nav a[aria-current='page'] {
 
 .hero-image {
   margin: 2rem 0;
+  margin-right: -50%;
 }
 
 .content-wrapper {
@@ -556,6 +549,16 @@ header nav a[aria-current='page'] {
 @media screen and (max-width: 1250px) {
   #seconde_section h2 {
     font-size: 40px;
+  }
+  #first_section {
+    flex-direction: column-reverse;
+  }
+  .hero-content {
+    position: relative;
+    margin-left: 0;
+  }
+  .hero-image {
+    margin-right: 0;
   }
 }
 
