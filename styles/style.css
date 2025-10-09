@@ -4,9 +4,11 @@ body {
   overflow-wrap: normal;
   margin: 0;
 }
+
 header {
   text-align: center;
 }
+
 header a {
   padding: 10px;
   text-decoration: none;
@@ -20,11 +22,12 @@ header a:hover {
 }
 
 main {
-  width: 850px;
+  width: 1024px;
   margin: 25px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 ul {
@@ -67,6 +70,7 @@ ul {
 #seconde_section h2 {
   font-size: 52px;
 }
+
 #savoir-faire-title {
   text-align: center;
 }
@@ -81,6 +85,7 @@ ul {
   line-height: 30px;
   margin: 20px auto;
 }
+
 #seconde_section a {
   display: inline-block;
   margin: 2rem;
@@ -92,6 +97,7 @@ ul {
   text-decoration: none;
   color: rgba(46, 42, 57, 0.8);
 }
+
 #seconde_section a:hover {
   background-color: rgb(243, 225, 189);
 }
@@ -125,19 +131,20 @@ footer p {
 }
 
 article {
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .product {
-  width: 850px;
+  width: 1024px;
   line-height: 30px;
 }
 
 .actifs {
   font-weight: bold;
   font-size: 48px;
+  text-align: center;
 }
+
 .product img {
   border-radius: 24px;
   margin-right: 20px;
@@ -339,6 +346,11 @@ header nav a[aria-current='page'] {
   position: absolute;
 }
 
+.shop {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 .hero-subtitle {
   font-size: 1.2rem;
   color: #666;
@@ -460,10 +472,6 @@ header nav a[aria-current='page'] {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.product article.reverse {
-  flex-direction: row-reverse;
-}
-
 .discover_product {
   flex: 1;
   padding: 1rem;
@@ -499,8 +507,85 @@ header nav a[aria-current='page'] {
   border-radius: 8px;
 }
 
+.image-shop {
+  border-radius: 20px;
+  box-shadow: 10px 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+.form-shop {
+  padding: 20px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn-out-of-stock {
+  width: 75%;
+  padding: 10px;
+  background-color: rgb(253, 251, 247);
+  color: grey;
+  border: 1px solid grey;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: not-allowed;
+}
+
+.black {
+  padding: 5px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.small-text {
+  font-size: 12px;
+  color: grey;
+  opacity: 0.9;
+}
+
+.btn-black {
+  background-color: black;
+  color: gray;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: line-through;
+
+}
+
+.btn-white {
+  background-color: white;
+  color: gray;
+  padding: 5px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: line-through;
+
+}
+
+.btn-wide {
+  width: 100%;
+  margin-top: 20px;
+
+}
 /* Responsive pour les articles produit */
 @media screen and (max-width: 900px) {
+
   .product article,
   .product article.reverse {
     flex-direction: column;
@@ -550,13 +635,16 @@ header nav a[aria-current='page'] {
   #seconde_section h2 {
     font-size: 40px;
   }
+
   #first_section {
     flex-direction: column-reverse;
   }
+
   .hero-content {
     position: relative;
     margin-left: 0;
   }
+
   .hero-image {
     margin-right: 0;
   }
@@ -570,6 +658,7 @@ header nav a[aria-current='page'] {
     align-items: center;
     flex-direction: column;
   }
+
   #first_section h2 a {
     display: block;
     margin: 5px;
@@ -578,6 +667,7 @@ header nav a[aria-current='page'] {
     width: fit-content;
     padding: 10px;
   }
+
   #seconde_section h2 {
     font-size: 35px;
   }
@@ -593,6 +683,7 @@ header nav a[aria-current='page'] {
     margin-top: -3rem;
     width: 40%;
   }
+
   #seconde_section h2 {
     font-size: 30px;
   }
@@ -691,6 +782,7 @@ header nav a[aria-current='page'] {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -698,6 +790,7 @@ header nav a[aria-current='page'] {
 
 /* Optimisations pour les mouvements réduits */
 @media (prefers-reduced-motion: reduce) {
+
   .fade-in-section,
   .lazy-image,
   .cta-button,
